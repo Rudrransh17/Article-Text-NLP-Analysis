@@ -71,7 +71,7 @@ for url in df['URL']:
     url_id = url_id + 1
 
 # Stop words -->
-stop_words_dir = "E:\Projects\Blackcoffer Internship Assignment\StopWords"
+stop_words_dir = "E:\Projects\Article Text NLP Analysis\StopWords"
 stop_word_files = os.listdir(stop_words_dir)
 stop_words = list()
 
@@ -91,8 +91,8 @@ for i in range(len(stop_words)):
         stop_words.append(temp[1])
 
 # Positive and Negative words -->
-negative_words_dir = "E:\Projects\Blackcoffer Internship Assignment\MasterDictionary\\negative-words.txt"
-positive_words_dir = "E:\Projects\Blackcoffer Internship Assignment\MasterDictionary\positive-words.txt"
+negative_words_dir = "E:\Projects\Article Text NLP Analysis\MasterDictionary\\negative-words.txt"
+positive_words_dir = "E:\Projects\Article Text NLP Analysis\MasterDictionary\positive-words.txt"
 positive_words_list = list()
 negative_words_list = list()
 
@@ -111,7 +111,7 @@ for i in range(len(positive_words_list)):
     
 # Store all articles in a dictionary with url id as key
 id_articles_dict = dict()
-articles_dir = "E:\Projects\Blackcoffer Internship Assignment\\article_files"
+articles_dir = "E:\Projects\Article Text NLP Analysis\\article_files"
 article_files = os.listdir(articles_dir)
 for file in article_files:
     id = file[:-4]
